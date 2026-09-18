@@ -1,0 +1,365 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "2.1 Define `DEFAULT_CATEGORIES`, the `AppState` object, and `initDefaults()` in `app.js`": [
+      {
+        "executionId": "b1758c5a-3db9-483a-997a-b1d1c4c30dac",
+        "chatSessionId": "sess_53d8a3c3-2a65-405c-9a55-442da38dda3a",
+        "timestamp": 1789663882019
+      }
+    ],
+    "2.2 Implement `persistState()` and `loadState()`": [
+      {
+        "executionId": "fbd2cb96-92fa-40cf-9753-f67693d2f38a",
+        "chatSessionId": "sess_bd0daa9c-9a1b-4993-98e6-320ca5f1c921",
+        "timestamp": 1789663940874
+      },
+      {
+        "executionId": "fbd2cb96-92fa-40cf-9753-f67693d2f38a",
+        "chatSessionId": "sess_bd0daa9c-9a1b-4993-98e6-320ca5f1c921",
+        "timestamp": 1789664024607
+      }
+    ],
+    "2. Implement AppState, constants, and localStorage layer": [
+      {
+        "executionId": "fbd2cb96-92fa-40cf-9753-f67693d2f38a",
+        "chatSessionId": "sess_bd0daa9c-9a1b-4993-98e6-320ca5f1c921",
+        "timestamp": 1789664024654
+      }
+    ],
+    "3.1 Declare all CSS custom properties for light theme on `:root` and dark theme on `[data-theme=\"dark\"]`": [
+      {
+        "executionId": "41ce518d-3dcb-46e9-bb32-f5c9f11ef556",
+        "chatSessionId": "sess_621a4ba2-769b-49c7-82c4-ef842c8f507b",
+        "timestamp": 1789664066681
+      },
+      {
+        "executionId": "41ce518d-3dcb-46e9-bb32-f5c9f11ef556",
+        "chatSessionId": "sess_621a4ba2-769b-49c7-82c4-ef842c8f507b",
+        "timestamp": 1789664859506
+      }
+    ],
+    "3.2 Implement responsive grid layout (`.app-container`, `.app-layout`) and fluid typography": [
+      {
+        "executionId": "41ce518d-3dcb-46e9-bb32-f5c9f11ef556",
+        "chatSessionId": "sess_621a4ba2-769b-49c7-82c4-ef842c8f507b",
+        "timestamp": 1789664071564
+      },
+      {
+        "executionId": "41ce518d-3dcb-46e9-bb32-f5c9f11ef556",
+        "chatSessionId": "sess_621a4ba2-769b-49c7-82c4-ef842c8f507b",
+        "timestamp": 1789664864308
+      }
+    ],
+    "3. Implement CSS foundation: custom properties, reset, typography, and base layout": [
+      {
+        "executionId": "41ce518d-3dcb-46e9-bb32-f5c9f11ef556",
+        "chatSessionId": "sess_621a4ba2-769b-49c7-82c4-ef842c8f507b",
+        "timestamp": 1789664864370
+      }
+    ],
+    "4.1 Implement `applyTheme(theme)`, `detectTheme()`, and `handleThemeToggle()` in `app.js`": [
+      {
+        "executionId": "e704446b-deff-4ce8-908c-eb8f5484a853",
+        "chatSessionId": "sess_b2f9ec60-c7d0-4e97-a035-b5e4885cd105",
+        "timestamp": 1789664896071
+      },
+      {
+        "executionId": "e704446b-deff-4ce8-908c-eb8f5484a853",
+        "chatSessionId": "sess_b2f9ec60-c7d0-4e97-a035-b5e4885cd105",
+        "timestamp": 1789664961646
+      }
+    ],
+    "4. Implement theme toggle": [
+      {
+        "executionId": "e704446b-deff-4ce8-908c-eb8f5484a853",
+        "chatSessionId": "sess_b2f9ec60-c7d0-4e97-a035-b5e4885cd105",
+        "timestamp": 1789664961712
+      }
+    ],
+    "5.1 Implement `addCategory(name)` and `deleteCategory(name)` state mutators": [
+      {
+        "executionId": "dec86b28-3ebc-436d-b6aa-567ede7c597c",
+        "chatSessionId": "sess_5424ca25-c952-49d4-a761-593a13288b36",
+        "timestamp": 1789664993718
+      },
+      {
+        "executionId": "dec86b28-3ebc-436d-b6aa-567ede7c597c",
+        "chatSessionId": "sess_5424ca25-c952-49d4-a761-593a13288b36",
+        "timestamp": 1789665122201
+      }
+    ],
+    "5.2 Implement `renderCategoryList(categories, container)` and wire the category form in `#category-section`": [
+      {
+        "executionId": "dec86b28-3ebc-436d-b6aa-567ede7c597c",
+        "chatSessionId": "sess_5424ca25-c952-49d4-a761-593a13288b36",
+        "timestamp": 1789664998519
+      },
+      {
+        "executionId": "dec86b28-3ebc-436d-b6aa-567ede7c597c",
+        "chatSessionId": "sess_5424ca25-c952-49d4-a761-593a13288b36",
+        "timestamp": 1789665127983
+      }
+    ],
+    "5. Implement category management (state mutators + rendering)": [
+      {
+        "executionId": "dec86b28-3ebc-436d-b6aa-567ede7c597c",
+        "chatSessionId": "sess_5424ca25-c952-49d4-a761-593a13288b36",
+        "timestamp": 1789665128050
+      }
+    ],
+    "6.1 Implement `validateTransactionForm(formData)` returning a `ValidationResult`": [
+      {
+        "executionId": "4ea3b54d-74fa-437b-a9f2-be16d8c8575a",
+        "chatSessionId": "sess_3e138cbf-aa60-4c69-8b91-69f2dc50dfd6",
+        "timestamp": 1789665162885
+      },
+      {
+        "executionId": "4ea3b54d-74fa-437b-a9f2-be16d8c8575a",
+        "chatSessionId": "sess_3e138cbf-aa60-4c69-8b91-69f2dc50dfd6",
+        "timestamp": 1789665778142
+      }
+    ],
+    "6.3 Implement `addTransaction(data)` state mutator": [
+      {
+        "executionId": "4ea3b54d-74fa-437b-a9f2-be16d8c8575a",
+        "chatSessionId": "sess_3e138cbf-aa60-4c69-8b91-69f2dc50dfd6",
+        "timestamp": 1789665167166
+      },
+      {
+        "executionId": "4ea3b54d-74fa-437b-a9f2-be16d8c8575a",
+        "chatSessionId": "sess_3e138cbf-aa60-4c69-8b91-69f2dc50dfd6",
+        "timestamp": 1789665783712
+      }
+    ],
+    "6.5 Implement `handleTransactionSubmit(event)` and wire it to the transaction form": [
+      {
+        "executionId": "4ea3b54d-74fa-437b-a9f2-be16d8c8575a",
+        "chatSessionId": "sess_3e138cbf-aa60-4c69-8b91-69f2dc50dfd6",
+        "timestamp": 1789665172063
+      },
+      {
+        "executionId": "4ea3b54d-74fa-437b-a9f2-be16d8c8575a",
+        "chatSessionId": "sess_3e138cbf-aa60-4c69-8b91-69f2dc50dfd6",
+        "timestamp": 1789665789279
+      }
+    ],
+    "6.6 Implement `renderTransactionForm(categories, container)` to populate the category `<select>` from `AppState.categories`": [
+      {
+        "executionId": "4ea3b54d-74fa-437b-a9f2-be16d8c8575a",
+        "chatSessionId": "sess_3e138cbf-aa60-4c69-8b91-69f2dc50dfd6",
+        "timestamp": 1789665177118
+      },
+      {
+        "executionId": "4ea3b54d-74fa-437b-a9f2-be16d8c8575a",
+        "chatSessionId": "sess_3e138cbf-aa60-4c69-8b91-69f2dc50dfd6",
+        "timestamp": 1789665794125
+      }
+    ],
+    "6. Implement transaction form, validation, and mutators": [
+      {
+        "executionId": "4ea3b54d-74fa-437b-a9f2-be16d8c8575a",
+        "chatSessionId": "sess_3e138cbf-aa60-4c69-8b91-69f2dc50dfd6",
+        "timestamp": 1789665794184
+      }
+    ],
+    "7.1 Implement `getSortedTransactions()` derived selector": [
+      {
+        "executionId": "23bde1fa-75a0-4b52-a674-ec3a0995eb4f",
+        "chatSessionId": "sess_0ab57fb5-e142-42ae-9b2f-c8629220c5ad",
+        "timestamp": 1789665824132
+      },
+      {
+        "executionId": "23bde1fa-75a0-4b52-a674-ec3a0995eb4f",
+        "chatSessionId": "sess_0ab57fb5-e142-42ae-9b2f-c8629220c5ad",
+        "timestamp": 1789666008284
+      }
+    ],
+    "7.4 Implement `renderTransactionList(transactions, container)`": [
+      {
+        "executionId": "23bde1fa-75a0-4b52-a674-ec3a0995eb4f",
+        "chatSessionId": "sess_0ab57fb5-e142-42ae-9b2f-c8629220c5ad",
+        "timestamp": 1789665829721
+      },
+      {
+        "executionId": "23bde1fa-75a0-4b52-a674-ec3a0995eb4f",
+        "chatSessionId": "sess_0ab57fb5-e142-42ae-9b2f-c8629220c5ad",
+        "timestamp": 1789666014440
+      }
+    ],
+    "7.5 Implement `deleteTransaction(id)` mutator and `handleDeleteTransaction(id)` event handler": [
+      {
+        "executionId": "23bde1fa-75a0-4b52-a674-ec3a0995eb4f",
+        "chatSessionId": "sess_0ab57fb5-e142-42ae-9b2f-c8629220c5ad",
+        "timestamp": 1789665835086
+      },
+      {
+        "executionId": "23bde1fa-75a0-4b52-a674-ec3a0995eb4f",
+        "chatSessionId": "sess_0ab57fb5-e142-42ae-9b2f-c8629220c5ad",
+        "timestamp": 1789666019892
+      }
+    ],
+    "7.7 Implement sort controls and wire them to `setSortOrder(order)` mutator": [
+      {
+        "executionId": "23bde1fa-75a0-4b52-a674-ec3a0995eb4f",
+        "chatSessionId": "sess_0ab57fb5-e142-42ae-9b2f-c8629220c5ad",
+        "timestamp": 1789665839477
+      },
+      {
+        "executionId": "23bde1fa-75a0-4b52-a674-ec3a0995eb4f",
+        "chatSessionId": "sess_0ab57fb5-e142-42ae-9b2f-c8629220c5ad",
+        "timestamp": 1789666024698
+      }
+    ],
+    "7. Implement transaction list rendering and delete": [
+      {
+        "executionId": "23bde1fa-75a0-4b52-a674-ec3a0995eb4f",
+        "chatSessionId": "sess_0ab57fb5-e142-42ae-9b2f-c8629220c5ad",
+        "timestamp": 1789666024795
+      }
+    ],
+    "9.1 Implement `setBudget(category, limit)` mutator and `getCategoryExpensesThisMonth()` selector": [
+      {
+        "executionId": "c9827336-8e73-45ad-acdb-ae149c96509b",
+        "chatSessionId": "sess_248094b2-ae06-454c-8026-d99aaf8c6c09",
+        "timestamp": 1789666058186
+      },
+      {
+        "executionId": "c9827336-8e73-45ad-acdb-ae149c96509b",
+        "chatSessionId": "sess_248094b2-ae06-454c-8026-d99aaf8c6c09",
+        "timestamp": 1789666187858
+      }
+    ],
+    "9.3 Implement `getBudgetProgress(category)` selector and `renderBudgetTrackers(state, container)`": [
+      {
+        "executionId": "c9827336-8e73-45ad-acdb-ae149c96509b",
+        "chatSessionId": "sess_248094b2-ae06-454c-8026-d99aaf8c6c09",
+        "timestamp": 1789666062685
+      },
+      {
+        "executionId": "c9827336-8e73-45ad-acdb-ae149c96509b",
+        "chatSessionId": "sess_248094b2-ae06-454c-8026-d99aaf8c6c09",
+        "timestamp": 1789666192297
+      }
+    ],
+    "9. Implement budget tracking": [
+      {
+        "executionId": "c9827336-8e73-45ad-acdb-ae149c96509b",
+        "chatSessionId": "sess_248094b2-ae06-454c-8026-d99aaf8c6c09",
+        "timestamp": 1789666192374
+      }
+    ],
+    "11.1 Implement `drawDonutChart(canvas, data)` using Canvas 2D API": [
+      {
+        "executionId": "0441d1eb-224d-4ad2-b3b9-9178050a2ef3",
+        "chatSessionId": "sess_acbc117a-aba4-49ed-8f1b-b29f471289cc",
+        "timestamp": 1789666266408
+      },
+      {
+        "executionId": "0441d1eb-224d-4ad2-b3b9-9178050a2ef3",
+        "chatSessionId": "sess_acbc117a-aba4-49ed-8f1b-b29f471289cc",
+        "timestamp": 1789666440258
+      }
+    ],
+    "11.2 Implement `drawBarChart(canvas, income, expenses)` using Canvas 2D API": [
+      {
+        "executionId": "0441d1eb-224d-4ad2-b3b9-9178050a2ef3",
+        "chatSessionId": "sess_acbc117a-aba4-49ed-8f1b-b29f471289cc",
+        "timestamp": 1789666271158
+      },
+      {
+        "executionId": "0441d1eb-224d-4ad2-b3b9-9178050a2ef3",
+        "chatSessionId": "sess_acbc117a-aba4-49ed-8f1b-b29f471289cc",
+        "timestamp": 1789666444968
+      }
+    ],
+    "11.3 Implement `renderCharts()` that calls both draw functions with current `AppState` data": [
+      {
+        "executionId": "0441d1eb-224d-4ad2-b3b9-9178050a2ef3",
+        "chatSessionId": "sess_acbc117a-aba4-49ed-8f1b-b29f471289cc",
+        "timestamp": 1789666275631
+      },
+      {
+        "executionId": "0441d1eb-224d-4ad2-b3b9-9178050a2ef3",
+        "chatSessionId": "sess_acbc117a-aba4-49ed-8f1b-b29f471289cc",
+        "timestamp": 1789666449800
+      }
+    ],
+    "11. Implement Canvas charts": [
+      {
+        "executionId": "0441d1eb-224d-4ad2-b3b9-9178050a2ef3",
+        "chatSessionId": "sess_acbc117a-aba4-49ed-8f1b-b29f471289cc",
+        "timestamp": 1789666449867
+      }
+    ],
+    "12.1 Style the transaction form, transaction list, summary cards, and category manager": [
+      {
+        "executionId": "76ed2803-c36f-4e0d-b6ee-b5510744840f",
+        "chatSessionId": "sess_80a9423a-dd5d-4b37-8f8a-b9a6060f3ab7",
+        "timestamp": 1789666482911
+      },
+      {
+        "executionId": "76ed2803-c36f-4e0d-b6ee-b5510744840f",
+        "chatSessionId": "sess_80a9423a-dd5d-4b37-8f8a-b9a6060f3ab7",
+        "timestamp": 1789666613263
+      }
+    ],
+    "12.2 Style the budget tracker cards, `<progress>` bars, and warning state": [
+      {
+        "executionId": "76ed2803-c36f-4e0d-b6ee-b5510744840f",
+        "chatSessionId": "sess_80a9423a-dd5d-4b37-8f8a-b9a6060f3ab7",
+        "timestamp": 1789666488132
+      },
+      {
+        "executionId": "76ed2803-c36f-4e0d-b6ee-b5510744840f",
+        "chatSessionId": "sess_80a9423a-dd5d-4b37-8f8a-b9a6060f3ab7",
+        "timestamp": 1789666618900
+      }
+    ],
+    "12.3 Style the chart sections, legend, non-blocking notice banner, and empty-state placeholder": [
+      {
+        "executionId": "76ed2803-c36f-4e0d-b6ee-b5510744840f",
+        "chatSessionId": "sess_80a9423a-dd5d-4b37-8f8a-b9a6060f3ab7",
+        "timestamp": 1789666492873
+      },
+      {
+        "executionId": "76ed2803-c36f-4e0d-b6ee-b5510744840f",
+        "chatSessionId": "sess_80a9423a-dd5d-4b37-8f8a-b9a6060f3ab7",
+        "timestamp": 1789666623355
+      }
+    ],
+    "12. Apply theme-aware and responsive CSS for all components": [
+      {
+        "executionId": "76ed2803-c36f-4e0d-b6ee-b5510744840f",
+        "chatSessionId": "sess_80a9423a-dd5d-4b37-8f8a-b9a6060f3ab7",
+        "timestamp": 1789666623449
+      }
+    ],
+    "8. Implement financial summary": [
+      {
+        "executionId": "fd5e38af-2904-449b-aaa8-c70b02e92611",
+        "chatSessionId": "sess_11d74212-188c-4d93-b06f-104e020278cc",
+        "timestamp": 1789666656646
+      }
+    ],
+    "10. Checkpoint — wire render() and validate core data flow": [
+      {
+        "executionId": "fd5e38af-2904-449b-aaa8-c70b02e92611",
+        "chatSessionId": "sess_11d74212-188c-4d93-b06f-104e020278cc",
+        "timestamp": 1789666660846
+      }
+    ],
+    "13. Final checkpoint — full integration and cross-browser verification": [
+      {
+        "executionId": "fd5e38af-2904-449b-aaa8-c70b02e92611",
+        "chatSessionId": "sess_11d74212-188c-4d93-b06f-104e020278cc",
+        "timestamp": 1789666665456
+      },
+      {
+        "executionId": "fd5e38af-2904-449b-aaa8-c70b02e92611",
+        "chatSessionId": "sess_11d74212-188c-4d93-b06f-104e020278cc",
+        "timestamp": 1789668162984
+      }
+    ]
+  }
+}

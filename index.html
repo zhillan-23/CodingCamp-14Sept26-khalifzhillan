@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense &amp; Budget Visualizer</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="app-header">
+    <div class="app-header__inner">
+      <h1 class="app-header__title">Expense &amp; Budget Visualizer</h1>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark/light theme">
+        🌙 Dark Mode
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="app-container">
+    <div class="app-layout">
+
+      <!-- LEFT COLUMN -->
+      <div class="app-layout__left">
+
+        <!-- Add Transaction -->
+        <section id="transaction-form-section" class="card" aria-labelledby="transaction-form-heading">
+          <h2 id="transaction-form-heading">Add Transaction</h2>
+          <!-- Transaction form rendered by app.js -->
+        </section>
+
+        <!-- Transaction List -->
+        <section id="transaction-list-section" class="card" aria-labelledby="transaction-list-heading">
+          <h2 id="transaction-list-heading">Transaction History</h2>
+          <!-- Sort controls and transaction list rendered by app.js -->
+        </section>
+
+        <!-- Category Manager -->
+        <section id="category-section" class="card" aria-labelledby="category-heading">
+          <h2 id="category-heading">Manage Categories</h2>
+
+          <!-- Add-category form -->
+          <div class="category-form">
+            <label for="category-name-input" class="sr-only">New category name</label>
+            <input
+              type="text"
+              id="category-name-input"
+              class="category-form__input"
+              placeholder="New category name"
+              aria-label="New category name"
+              autocomplete="off"
+            />
+            <button type="button" id="add-category-btn" class="btn btn--primary" aria-label="Add category">
+              Add
+            </button>
+          </div>
+          <!-- Inline error injected by app.js -->
+
+          <!-- Category list rendered by app.js -->
+          <div id="category-list-container"></div>
+        </section>
+
+      </div><!-- /.app-layout__left -->
+
+      <!-- RIGHT COLUMN -->
+      <div class="app-layout__right">
+
+        <!-- Financial Summary -->
+        <section id="summary-section" class="card" aria-labelledby="summary-heading">
+          <h2 id="summary-heading">Financial Summary</h2>
+          <!-- Summary cards rendered by app.js -->
+        </section>
+
+        <!-- Budget Tracker -->
+        <section id="budget-section" class="card" aria-labelledby="budget-heading">
+          <h2 id="budget-heading">Budget Tracker</h2>
+          <!-- Budget progress cards rendered by app.js -->
+        </section>
+
+        <!-- Charts -->
+        <section id="charts-section" class="card" aria-labelledby="charts-heading">
+          <h2 id="charts-heading">Visualizations</h2>
+
+          <div class="chart-wrapper">
+            <h3 class="chart-title">Expenses by Category</h3>
+            <canvas id="donut-chart-canvas" width="400" height="300" aria-label="Donut chart showing expense breakdown by category" role="img">
+              <p>Your browser does not support the HTML canvas element. Please upgrade to a modern browser to view charts.</p>
+            </canvas>
+            <!-- Legend rendered by app.js below canvas -->
+          </div>
+
+          <div class="chart-wrapper">
+            <h3 class="chart-title">Income vs. Expenses</h3>
+            <canvas id="bar-chart-canvas" width="400" height="300" aria-label="Bar chart comparing total income to total expenses" role="img">
+              <p>Your browser does not support the HTML canvas element. Please upgrade to a modern browser to view charts.</p>
+            </canvas>
+          </div>
+
+        </section><!-- /#charts-section -->
+
+      </div><!-- /.app-layout__right -->
+
+    </div><!-- /.app-layout -->
+  </main><!-- /.app-container -->
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
